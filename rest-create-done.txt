@@ -1,5 +1,6 @@
-<!doctype html>
-<html lang=en>
-<title>Redirecting...</title>
-<h1>Redirecting...</h1>
-<p>You should be redirected automatically to the target URL: <a href="https://localhost:8080/accounts">https://localhost:8080/accounts</a>. If not, click the link.
+curl -X POST http://localhost:8080/accounts \
+-H "Content-Type: application/json" \
+-d '{"name":"John","email":"john@example.com"}'
+
+Response:
+{"name":"John","email":"john@example.com"}

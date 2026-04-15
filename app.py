@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_talisman import Talisman
 
 app = Flask(__name__)
-Talisman(app)
+Talisman(app, force_https=False)
 
 accounts = {}
 counter = 1

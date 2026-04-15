@@ -1,0 +1,12 @@
+NAME                           READY   STATUS    RESTARTS   AGE
+pod/accounts-fb84b7586-kx4dc   0/1     Pending   0          0s
+
+NAME                       TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+service/accounts-service   NodePort    10.96.228.39   <none>        8080:31658/TCP   0s
+service/kubernetes         ClusterIP   10.96.0.1      <none>        443/TCP          45h
+
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/accounts   0/1     1            0           0s
+
+NAME                                 DESIRED   CURRENT   READY   AGE
+replicaset.apps/accounts-fb84b7586   1         1         0       0s
